@@ -33,7 +33,7 @@ functions:
     memorySize: 512
     events:
       - http:
-          path: /s3/bucket/create
+          path: /s3/bucket/crear-s3
           method: post
           cors: true
           integration: lambda
@@ -41,7 +41,7 @@ functions:
     handler: crear_directorio.lambda_handler
     events:
       - http:
-          path: /s3/bucket/create-directory
+          path: /s3/bucket/crear-directorio
           method: post
           cors: true
           integration: lambda
@@ -50,7 +50,7 @@ functions:
     memorySize: 512
     events:
       - http:
-          path: /s3/upload
+          path: /s3/subir-archivo
           method: post
           cors: true
           integration: lambda
